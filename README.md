@@ -9,7 +9,7 @@ Advanced text-to-speech nodes for ComfyUI powered by the CosyVoice3 model family
 
 ## Features
 
-- **Zero-Shot Voice Cloning** - Clone any voice from 3-10 seconds of reference audio
+- **Zero-Shot Voice Cloning** - Clone any voice from 3-30 seconds of reference audio
 - **Cross-Lingual Synthesis** - Speak different languages while preserving voice characteristics
 - **Voice Conversion** - Transform one voice to sound like another
 - **9 Languages** - Chinese, English, Japanese, Korean, German, Spanish, French, Italian, Russian
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 1. Add **FL CosyVoice3 Model Loader** and select `Fun-CosyVoice3-0.5B`
 2. Connect to **Zero-Shot Clone** or **Cross-Lingual** node
-3. Provide reference audio (3-10 seconds recommended)
+3. Provide reference audio (3-30 seconds recommended)
 4. Enter your text and generate
 
 ## Models

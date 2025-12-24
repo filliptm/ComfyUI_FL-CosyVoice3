@@ -113,7 +113,7 @@ class FL_CosyVoice3_ZeroShot:
             },
             "optional": {
                 "seed": ("INT", {
-                    "default": -1,
+                    "default": 42,
                     "min": -1,
                     "max": 2147483647,
                     "description": "Random seed (-1 for random)"

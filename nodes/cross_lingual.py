@@ -63,7 +63,7 @@ class FL_CosyVoice3_CrossLingual:
                     "description": "Target language (auto-detect from text)"
                 }),
                 "seed": ("INT", {
-                    "default": -1,
+                    "default": 42,
                     "min": -1,
                     "max": 2147483647,
                     "description": "Random seed (-1 for random)"

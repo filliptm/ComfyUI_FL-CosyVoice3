@@ -15,6 +15,7 @@ from .nodes.zero_shot import FL_CosyVoice3_ZeroShot
 from .nodes.cross_lingual import FL_CosyVoice3_CrossLingual
 from .nodes.voice_conversion import FL_CosyVoice3_VoiceConversion
 from .nodes.audio_crop import FL_CosyVoice3_AudioCrop
+from .nodes.dialog import FL_CosyVoice3_Dialog
 
 # Node class mappings
 NODE_CLASS_MAPPINGS = {
@@ -23,6 +24,7 @@ NODE_CLASS_MAPPINGS = {
     "FL_CosyVoice3_CrossLingual": FL_CosyVoice3_CrossLingual,
     "FL_CosyVoice3_VoiceConversion": FL_CosyVoice3_VoiceConversion,
     "FL_CosyVoice3_AudioCrop": FL_CosyVoice3_AudioCrop,
+    "FL_CosyVoice3_Dialog": FL_CosyVoice3_Dialog,
 }
 
 # Node display name mappings
@@ -32,6 +34,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FL_CosyVoice3_CrossLingual": "FL CosyVoice3 Cross-Lingual",
     "FL_CosyVoice3_VoiceConversion": "FL CosyVoice3 Voice Conversion",
     "FL_CosyVoice3_AudioCrop": "FL CosyVoice3 Audio Crop",
+    "FL_CosyVoice3_Dialog": "FL CosyVoice3 Dialog",
 }
 
 # ASCII art banner

@@ -38,8 +38,8 @@ class FL_CosyVoice3_ModelLoader:
                     "default": "Fun-CosyVoice3-0.5B",
                     "description": "CosyVoice model version to load"
                 }),
-                "download_source": (["ModelScope", "HuggingFace"], {
-                    "default": "ModelScope",
+                "download_source": (["HuggingFace", "ModelScope"], {
+                    "default": "HuggingFace",
                     "description": "Source to download model from"
                 }),
                 "device": (["auto", "cuda", "cpu", "mps"], {

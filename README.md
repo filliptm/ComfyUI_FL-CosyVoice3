@@ -2,6 +2,7 @@
 
 Advanced text-to-speech nodes for ComfyUI powered by the CosyVoice3 model family. Features zero-shot voice cloning, cross-lingual synthesis, and voice conversion.
 
+[![CosyVoice](https://img.shields.io/badge/CosyVoice-Original%20Repo-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FunAudioLLM/CosyVoice)
 [![Patreon](https://img.shields.io/badge/Patreon-Support%20Me-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/Machinedelusions)
 
 ![Workflow Preview](assets/workflow_preview.png)
@@ -60,11 +61,6 @@ Models download automatically on first use to `ComfyUI/models/cosyvoice/`.
 - Python 3.10+
 - 8GB RAM minimum (16GB+ recommended)
 - NVIDIA GPU with 8GB+ VRAM recommended (CPU supported)
-
-## Credits
-
-- [CosyVoice](https://github.com/FunAudioLLM/CosyVoice) by FunAudioLLM
-- ComfyUI integration by [Machine Delusions](https://github.com/filliptm)
 
 ## License
 

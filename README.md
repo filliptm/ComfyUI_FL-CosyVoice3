@@ -2,6 +2,8 @@
 
 Advanced text-to-speech nodes for ComfyUI powered by the CosyVoice3 model family. Features zero-shot voice cloning, cross-lingual synthesis, and voice conversion.
 
+[![Patreon](https://img.shields.io/badge/Patreon-Support%20Me-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/Machinedelusions)
+
 ![Workflow Preview](assets/workflow_preview.png)
 
 ## Features

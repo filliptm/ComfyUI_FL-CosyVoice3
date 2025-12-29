@@ -68,6 +68,10 @@ class FL_CosyVoice3_CrossLingual:
                     "max": 2147483647,
                     "description": "Random seed (-1 for random)"
                 }),
+                "text_frontend": ("BOOLEAN", {
+                    "default": True,
+                    "description": "Enable text normalization. Disable for CMU phonemes or special tags like <slow>"
+                }),
             }
         }
 
@@ -78,7 +82,8 @@ class FL_CosyVoice3_CrossLingual:
         reference_audio: Dict[str, Any],
         speed: float = 1.0,
         target_language: str = "auto",
-        seed: int = -1
+        seed: int = -1,
+        text_frontend: bool = True
     ) -> Tuple[Dict[str, Any]]:
         """
         Generate cross-lingual speech
@@ -176,7 +181,8 @@ class FL_CosyVoice3_CrossLingual:
                 tts_text=formatted_text,
                 prompt_wav=temp_file,
                 stream=False,
-                speed=speed
+                speed=speed,
+                text_frontend=text_frontend
             )
 
             # Collect all output chunks (for longer text that gets split)

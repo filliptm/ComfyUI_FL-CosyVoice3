@@ -118,6 +118,10 @@ class FL_CosyVoice3_ZeroShot:
                     "max": 2147483647,
                     "description": "Random seed (-1 for random)"
                 }),
+                "text_frontend": ("BOOLEAN", {
+                    "default": True,
+                    "description": "Enable text normalization. Disable for CMU phonemes or special tags like <slow>"
+                }),
             }
         }
 
@@ -127,7 +131,8 @@ class FL_CosyVoice3_ZeroShot:
         text: str,
         reference_audio: Dict[str, Any],
         speed: float = 1.0,
-        seed: int = -1
+        seed: int = -1,
+        text_frontend: bool = True
     ) -> Tuple[Dict[str, Any]]:
         """
         Clone voice from reference audio
@@ -239,7 +244,8 @@ class FL_CosyVoice3_ZeroShot:
                     tts_text=formatted_tts_text,
                     prompt_wav=temp_file,
                     stream=False,
-                    speed=speed
+                    speed=speed,
+                    text_frontend=text_frontend
                 )
             else:
                 # Use standard zero-shot with transcript
@@ -250,7 +256,8 @@ class FL_CosyVoice3_ZeroShot:
                     prompt_text=formatted_prompt_text,
                     prompt_wav=temp_file,
                     stream=False,
-                    speed=speed
+                    speed=speed,
+                    text_frontend=text_frontend
                 )
 
             # Collect all output chunks (for longer text that gets split)
